@@ -1,7 +1,7 @@
 "use strict";
 console.log('Hello World');
 let a = 1 + 2;
-let b = "あ" + 3;
+let b = a + 3;
 let c = {
     apple: a,
     banana: b
