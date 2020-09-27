@@ -1,0 +1,28 @@
+{
+  "name": "TypeScript-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=development",
+    "start": "webpack-dev-server --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atsuki1224/TypeScript-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atsuki1224/TypeScript-playground/issues"
+  },
+  "homepage": "https://github.com/atsuki1224/TypeScript-playground#readme",
+  "devDependencies": {
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
