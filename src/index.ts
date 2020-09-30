@@ -7,3 +7,9 @@ const config = {
 };
 
 const app = express();
+
+enum enumNum {
+  A,
+  B,
+  C
+}
