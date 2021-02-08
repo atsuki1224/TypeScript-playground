@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar item_1 = __webpack_require__(/*! ./item */ \"./src/item.ts\");\nvar elem = document.getElementById('output');\nvar aBook = new item_1.Item('はじめてのTypeScript', 2980);\naBook.say(elem);\nvar age = 1;\nage = 2;\n//リテラル型\nvar name = \"Jon\";\n//定数のように扱うことはできない\n//リテラル型のユニオン型\nvar name2 = \"a\";\n//anyとunknown\n//どんな値でも入ってしまう\nvar unk = \"aiko\";\nunk = 1;\n//unknown型のオブジェクトのプロパティは使用、呼び出しできない(anyはできる)\n//console.log(unk.length)\n//これによりランタイム時のエラーが起きないようにできる\n//何のためにunknownで定義するの？\n//キャストする際に全く関係ないものにキャストすることはできないが、一度anyかunknownにキャストして経由するとキャストできる。\n//そのような場合に使用する\n//名前つき関数\nfunction increment(num) {\n    return num + 1;\n}\n//匿名関数\nvar increment2 = function (num) {\n    return num + 1;\n};\n//匿名かつアロー関数\nvar increment3 = function (num) {\n    return num + 1;\n};\n//匿名かつアロー関数の省略記法\nvar increment4 = function (num) { return num + 1; };\n//このときにreturnはかけない\n//thisについて\n//() => {} とfunction() {}ではthisの扱いが異なる\n//() => {}は宣言時にthisであるものを使用する\n//function() {}は実行時にthisであるものを使用する\nvar v1 = undefined;\nvar ud1 = undefined;\n\n\n//# sourceURL=webpack:///./src/app.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar item_1 = __webpack_require__(/*! ./item */ \"./src/item.ts\");\nvar elem = document.getElementById(\"output\");\nvar aBook = new item_1.Item(\"はじめてのTypeScript\", 2980);\naBook.say(elem);\n\n\n//# sourceURL=webpack:///./src/app.ts?");
 
 /***/ }),
 
@@ -106,7 +106,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar it
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Item = void 0;\nvar Item = /** @class */ (function () {\n    function Item(name, price) {\n        this.name = name;\n        this.price = price;\n    }\n    Item.prototype.say = function (elem) {\n        if (elem) { // 引数がnullでない場合\n            elem.innerHTML = '書名：' + this.name + '  価格: ' + this.price + '円';\n        }\n    };\n    return Item;\n}());\nexports.Item = Item;\n\n\n//# sourceURL=webpack:///./src/item.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Item = void 0;\nvar Item = /** @class */ (function () {\n    function Item(name, price) {\n        this.name = name;\n        this.price = price;\n    }\n    Item.prototype.say = function (elem) {\n        if (elem) {\n            // 引数がnullでない場合\n            elem.innerHTML = \"書名：\" + this.name + \"  価格: \" + this.price + \"円\";\n        }\n    };\n    return Item;\n}());\nexports.Item = Item;\n\n\n//# sourceURL=webpack:///./src/item.ts?");
 
 /***/ })
 
