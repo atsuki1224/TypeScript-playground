@@ -4,3 +4,7 @@ enum Num {
   THE,
   WED
 }
+
+// ユニオン型
+//const numOrFalse: number | false = false;
+const numOrFalse: number | false = 1;
